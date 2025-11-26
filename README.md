@@ -69,7 +69,6 @@ http://localhost:3000
 http://localhost:3000
 ```
 
-*(Podés agregar aquí una captura de esas configuraciones)*
 
 Luego copiá el **Domain** y el **Client ID** dentro del código del proyecto:
 
@@ -130,8 +129,7 @@ Después del login, se muestra el **perfil del usuario**:
 }
 ```
 
-*(Podés agregar captura de la app funcionando)*
-
+![alt text](image7.png)
 ---
 
 ## 📄 Notas importantes
