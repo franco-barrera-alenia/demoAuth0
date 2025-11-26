@@ -129,7 +129,7 @@ Después del login, se muestra el **perfil del usuario**:
 }
 ```
 
-![alt text](image7.png)
+![alt text](img/image7.png)
 ---
 
 ## 📄 Notas importantes
