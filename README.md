@@ -89,8 +89,8 @@ const auth0Client = await auth0.createAuth0Client({
 1. Cloná el repositorio:
 
 ```bash
-git clone https://github.com/<tu-usuario>/<tu-repo>.git
-cd <tu-repo>
+git clone https://github.com/franco-barrera-alenia/demoAuth0.git
+cd demoAuth0
 ```
 
 2. Instalá las dependencias del proyecto:
