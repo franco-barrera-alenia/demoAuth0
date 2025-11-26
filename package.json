@@ -1,0 +1,15 @@
+{
+  "name": "auth0demo",
+  "version": "1.0.0",
+  "description": "Este proyecto es una demostración mínima de cómo integrar **Auth0** en una Single Page Application usando **auth0-spa-js**.\r El objetivo es mostrar el flujo de login, logout y obtención del perfil del usuario con el menor código posible.",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}

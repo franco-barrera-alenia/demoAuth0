@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Auth0 Login Demo</title>
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/2.1/auth0-spa-js.production.js"></script>
+  </head>
+
+  <body>
+    <h1>Auth0 Login Demo</h1>
+
+    <button id="login">Log In</button>
+    <button id="logout">Log Out</button>
+
+    <h2>User Profile:</h2>
+    <pre id="profile">Not logged in</pre>
+
+    <script>
+      async function main() {
+
+        const auth0Client = await auth0.createAuth0Client({
+          domain: "", // Completar con el Domain de auth0
+          clientId: "", // Completar con el clientID de la aplicacion en auth0
+          authorizationParams: {
+            redirect_uri: window.location.origin,
+          }
+        });
+
+        if (window.location.search.includes("code=")) {
+          await auth0Client.handleRedirectCallback();
+          window.history.replaceState({}, document.title, "/");
+        }
+
+        const user = await auth0Client.getUser();
+        if (user) {
+          document.getElementById("profile").innerText =
+            JSON.stringify(user, null, 2);
+        }
+
+        document.getElementById("login").onclick = () => {
+          auth0Client.loginWithRedirect();
+        };
+
+        document.getElementById("logout").onclick = () => {
+          auth0Client.logout({
+            logoutParams: { returnTo: window.location.origin }
+          });
+        };
+      }
+
+      main();
+    </script>
+
+  </body>
+</html>
