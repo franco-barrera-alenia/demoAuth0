@@ -9,7 +9,7 @@ El objetivo es mostrar el flujo de login, logout y obtención del perfil del usu
 
 * HTML + JavaScript (sin frameworks)
 * Auth0 SPA JS SDK (`auth0-spa-js`)
-* Servidor estático (`npx serve`)
+* Servidor estático (`npm lite-server`)
 
 ---
 
